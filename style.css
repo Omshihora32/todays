@@ -1,0 +1,99 @@
+@font-face {
+  font-family: lala;
+  src: url(./OpenSans-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lala;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App container */
+.app {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border: 2px solid #000;
+}
+
+/* Heading */
+.app h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Input section */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #000;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-box button {
+  padding: 10px 16px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-box button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+}
+
+/* Todo item */
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+/* Task text */
+.todo-list li span {
+  font-size: 16px;
+}
+
+/* Delete button */
+.todo-list li .delete {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.todo-list li .delete:hover {
+  background: #fff;
+  color: #000;
+}
